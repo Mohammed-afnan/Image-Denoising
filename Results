@@ -1,0 +1,28 @@
+The training loss and validation loss abruptly fallen down from 0.12 to 0.023 after 16 epochs, training accuracy and validation accuracy abruptly increased from 0 to 0.807 after 16 epochs.
+Later we have seen that there is jump in the validation accuracy from 0.807 to 0.816 after 20 epochs.
+Invalidation loss and validation accuracy there is no change after 20 epochs. The obtained above results are written based on the below shown graph figures which are obtained in our project.
+The below shown graph figures are plotted against training loss vs validation loss [fig(f)], training accuracy vs validation accuracy [fig(g)], training loss vs training accuracy[fig(h)],
+validation loss vs validation accuracy[fig(I)] Here we can see how images are converted from noisy image to de-noisy image by reducing the noise in the images.
+Reduction of noise can make an image detail more visible and Clear, one of the advantages of image denoising is we can obtain the true image out of noisy image.
+
+Table: Basic Auto Encoder
+
+Epoch	Training	Testing with noise
+	Loss                    Accuracy	Loss                       Accuracy
+50	0.012                    0.014	0.013                      0.014
+100	0.008                    0.015	0.011                      0.013
+
+Table 2: Variational auto encoder
+
+Epoch	Training	Testing with noise
+	Loss                      Accuracy
+	Loss                 Accuracy
+50	62.154                  0.013	62.012              0.133
+100	60.769                  0.016	60.805              0.143
+
+Table 3: Convolutional auto encoders
+
+Epoch	Training	Testing with noise
+	Loss                      Accuracy	Loss                    Accuracy
+50	0.0049                   0.815	0.0047                 0.814
+100	0.0043                   0.815	0.0043                 0.815
