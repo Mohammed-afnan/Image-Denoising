@@ -20,7 +20,7 @@ VAEs are neural networks that receive input data and convert it to its latent re
 ![image](https://user-images.githubusercontent.com/64902552/177459315-222b0771-7d27-419e-a40a-867c8ec06916.png)
 # Convolutional Auto Encoders
 Convolutional neural networks excel in a variety of tasks, therefore it's only reasonable to consider them for picture denoising. In convolutional autoencoders, max-pooling layers are used in conjunction with convolutional layers to compress the size of the original input and represent it in a latent space, and up-sampling is used in conjunction with convolutional layers to reconstruct the original input from the latent space at the decoder side. We can also use a transposed convolution layer instead of up-sampling, but the up-sampling method reduces the number of training parameters in the network and is suitable for a wide range of problems, especially when the training data is sufficient.
-
+# Our model architecture
 Using Python built-in methods, import essential libraries such as NumPy, TensorFlow, Keras, and Matplotlib for all three types of autoencoders. The mnist data was utilised in this experiment. You can also use any other information.
 Fig shows the architecture of our model where it consists of an encoder given with input image (256,256,3) which gives a latent space representation and the decoder decodes the latent space representation to give the original input image back. 
 ![image](https://user-images.githubusercontent.com/64902552/177459372-fd502e27-619a-4c17-883a-0fbc831a39c4.png)
